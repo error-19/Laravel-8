@@ -12,7 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::match(['get', 'post'], '/about', function () {
+    return view('about');
+});
+Route::any('/contact', function () {
+    return view('contact');
+});
 Route::get('/', function () {
     return view('welcome');
 });
