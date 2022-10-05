@@ -24,8 +24,10 @@
     <div>
     <h1>This is my home page</h1>
     <ul class="list">
-        <li class="list-item"><a href="{{url('about')}}">About</a> </li>
-        <li class="list-item"> <a href=" {{url('contact')}}">Contact</a> </li>
+        <li class="list-item"><a href="{{route('about.us')}}">About</a> </li>
+        <li class="list-item"> <a href=" {{route('contact.us')}}">Contact</a> </li>
+        <li class="list-item"> <a href="{{route('phonenumber')}}">PhoneNumber</a></li>
+        <li class="list-item"><a href="{{route('Name')}}">Name</a></li>
 </ul>
 </div>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
