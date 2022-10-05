@@ -1,26 +1,21 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-Route::match(['get', 'post'], '/about', function () {
-    return view('about');
-});
-Route::any('/contact', function () {
+// Route::get('/about', function () {
+//     return redirect('/contact');
+// });
+Route::view('/about','about');
+Route::get('/contact', function () {
     return view('contact');
 });
+// Route::get('/contact/{roll}', function ($roll) {
+//     return "My Roll No is $roll";
+// });
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/country', function () {
+  return view('country');
+})->middleware('country');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
