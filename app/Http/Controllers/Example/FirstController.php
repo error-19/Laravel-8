@@ -10,12 +10,16 @@ class FirstController extends Controller
     //_index method_//
     public function index()
     {
-        # code...
        return view('contact');
     }
     public function phone()
     {
-        # code...
         return view('phone');
+    }
+
+    //country method//
+    public function country2()
+    {
+        return view('country');
     }
 }

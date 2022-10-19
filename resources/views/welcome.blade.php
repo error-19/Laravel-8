@@ -28,6 +28,7 @@
         <li class="list-item"> <a href=" {{route('contact.us')}}">Contact</a> </li>
         <li class="list-item"> <a href="{{route('phonenumber')}}">PhoneNumber</a></li>
         <li class="list-item"><a href="{{route('Name')}}">Name</a></li>
+        <li class="list-item"><a href="{{route('birthday')}}">Birthday</a></li>
 </ul>
 </div>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
