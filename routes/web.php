@@ -21,11 +21,12 @@ Route::get('/about', function (Request $request) {
  Route::get('/phone',[FirstController::class,'phone'])->name('phonenumber');
  Route::get('/name',[SecondController::class,'name'])->name('Name');
  Route::get('/birth',[thirdcontroller::class,'birthday'])->name('birthday');
+ Route::post('/student', [FirstController::class, 'Student'])->name('student');
 
  //invokable route:
  Route::get('/test', LearnController::class);
  Route::get('/hello', LearnController::class,'hello');
- Route::get('/country2',[FirstController::class,'country2'])->name('country')->middleware('country');
+ Route::get('/country2',[FirstController::class,'country2'])->name('country2')->middleware('country');
 
 
 
