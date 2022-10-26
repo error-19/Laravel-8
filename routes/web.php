@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Example\FirstController;
-use App\Http\Controllers\Second\SecondController;
+use App\Http\Controllers\Example\SecondController;
 use App\Http\Controllers\thirdcontroller;
 use App\Http\Controllers\LearnController;
 
@@ -22,6 +22,8 @@ Route::get('/about', function (Request $request) {
  Route::get('/name',[SecondController::class,'name'])->name('Name');
  Route::get('/birth',[thirdcontroller::class,'birthday'])->name('birthday');
  Route::post('/student', [FirstController::class, 'Student'])->name('student');
+ Route::get('/test1',[SecondController::class,'test']);
+ Route::get('/Laravel',[FirstController::class,'laravel'])->name('Laravel');
 
  //invokable route:
  Route::get('/test', LearnController::class);

@@ -9,6 +9,9 @@ class SecondController extends Controller
 {
     public function name()
     {
-        return view('Name');
+       // return [1, 2, 3];
+       return response('Hello World', 200)
+->header('Content-Type', 'text/plain');
+
     }
 }
